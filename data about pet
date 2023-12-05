@@ -1,0 +1,33 @@
+<html>
+ <head>
+ <title>Document</title>
+ </head>
+ <body>
+ <form>
+ Name:<input type="text" name="Name" id="1"><br><br>
+ Age:<input type="text" name="Age" id="2"><br><br>
+Weight:<input type="text" name="Weight" id="3"><br><br>
+Type:<input type="text" name="Type" id="4"><br><br>
+What it like most:<input type="text" name="What" id="5"><br><br>
+ <button id="but1">submit</button>
+ </form>
+ <script>
+ document.getElementById("but1").addEventListener("click", function () {
+ event.preventDefault()
+ var name1 = document.getElementById("1").value;
+ var Age1 = document.getElementById("2").value;
+ var Weight1 = document.getElementById("3").value;
+ var Type1 = document.getElementById("4").value;
+ var what1 = document.getElementById("5").value;
+ var pet = {
+ name: name1,
+ age: Age1,
+ weight: Weight1,
+ type: Type1,
+ what: what1
+ }
+ console.log(JSON.stringify(pet))
+ }) 
+ </script>
+ </body>
+</html>
