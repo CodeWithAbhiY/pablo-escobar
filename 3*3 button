@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+ .grid{
+ margin: 100px auto;
+ width: 158px;
+ 
+ /* margin-left: 50px; */
+ }
+ .firstrow input{ 
+ width: 50px;
+ border-radius: 8px;
+ cursor: pointer;
+ }
+ .secondrow input{
+ /* margin-top: 100px; */
+ border-radius: 8px;
+ width: 50px;
+ cursor: pointer;
+ /* padding: 10px; */
+ }
+ .thirdrow input{
+ /* margin-top: 100px; */
+ border-radius: 8px;
+ width: 50px;
+ cursor: pointer;
+ /* padding: 10px; */
+ }
+ </style>
+ <script>
+ function changecolor(color){
+ if(color=="red"){
+ document.getElementById("para").style.color="red"
+ }else if(color=="green")
+ {
+ document.getElementById("para").style.color="green"
+ }
+ else{
+ document.getElementById("para").style.color="blue"
+ }
+ }
+ function changesize(psize){
+ if(psize=="10"){
+ document.getElementById("para").style.fontSize="10px"
+ }else if(psize=="20")
+ {
+ document.getElementById("para").style.fontSize="20px"
+ }
+ else{
+ document.getElementById("para").style.fontSize="30px"
+ }
+ }
+ 
+ function changefamily(family){
+ if(family=="Forte"){
+ document.getElementById("para").style.fontFamily="Forte"
+ }else if(family=="Times")
+ {
+ document.getElementById("para").style.fontFamily="Times"
+ }
+ else{
+ document.getElementById("para").style.fontFamily="Arial"
+ }
+ }
+ 
+ </script>
+</head>
+<body>
+ <div>
+ <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate 
+ullam tenetur hic veniam iure quo quas soluta ratione enim repellendus vel aut 
+voluptatibus commodi atque maiores tempora, voluptatem doloremque error esse 
+qui numquam praesentium odio sint! Eum autem minus error expedita, eos dolorum 
+est dolor deleniti labore blanditiis alias, debitis aut aliquam dignissimos deserunt, 
+ipsam perspiciatis cumque dicta accusamus! Quos doloribus voluptatem saepe? 
+Eligendi ut numquam ex nisi ratione! Commodi a soluta nisi corrupti facilis suscipit 
+ex, nam minus ad esse non quasi eaque ipsam iusto? Nihil exercitationem cum natus 
+tempora laborum quisquam, facere deleniti illo id impedit ipsa fugiat nisi corporis 
+ipsam nam velit repudiandae mollitia quam sequi perspiciatis quae dolorem 
+excepturi? Iusto, earum quidem. Dolorem atque autem ipsa consequatur veniam 
+rerum, nam facilis aliquid reprehenderit aut, suscipit inventore vel, officia vitae rem 
+sapiente. Molestias voluptates distinctio temporibus a dolorum sit aperiam modi 
+repudiandae tempore sint incidunt esse reiciendis eum debitis vitae cum fuga magni 
+ipsum quia, necessitatibus est eius delectus iste accusamus. Officia distinctio 
+quibusdam architecto a nam nobis accusantium itaque in debitis vero tempora sint 
+placeat quaerat quo, modi commodi quas officiis. Voluptatibus omnis maxime rerum 
+nihil, perferendis nostrum fugiat? Possimus laborum voluptatum magnam inventore 
+quo deserunt nobis reprehenderit velit. Facere nesciunt, esse architecto ratione vel 
+alias quae odit deserunt quo voluptates ex? Cumque dolorem deserunt aperiam, 
+totam non sequi harum ratione vel odit mollitia ex at. Atque nulla officia, 
+necessitatibus repellat, illum laudantium amet voluptates sapiente itaque asperiores 
+cum eum, recusandae dignissimos a nostrum provident ex! Aut aperiam ex sapiente 
+accusamus eos aspernatur aliquid autem libero? Sequi sit molestiae esse! Eaque 
+voluptates neque dignissimos sequi optio et culpa cupiditate corporis incidunt 
+ratione iste, accusamus obcaecati earum, laborum minus qui quidem temporibus 
+deserunt ullam repudiandae commodi magni at repellat. Esse minima, explicabo 
+aliquid consequuntur unde illum nisi quidem maxime quia placeat iste aperiam 
+harum sint nostrum error culpa porro nihil ducimus mollitia possimus suscipit 
+pariatur asperiores eos? Alias perspiciatis reiciendis non quam eaque placeat adipisci 
+eos praesentium enim esse veniam possimus hic unde nobis magnam officiis nemo 
+ex, sit quasi velit ea sint? Esse commodi tempore quibusdam rem error dolore. 
+Maiores, sed esse.</p>
+</div>
+ <form>
+ <div class="grid">
+ <div class="firstrow">
+ <input type="button" value="Red" id="red" onclick="changecolor(id)">
+ <input type="button" value="Green" id="green" onclick="changecolor(id)">
+ <input type="button" value="Blue" id="blue" onclick="changecolor(id)">
+ </div>
+ <div class="secondrow">
+ <input type="button" value="10" id="10" onclick="changesize(id)">
+ <input type="button" value="20" id="20" onclick="changesize(id)">
+ <input type="button" value="30" id="30" onclick="changesize(id)"> 
+ </div>
+ <div class="thirdrow">
+ <input type="button" value="Forte" id="Forte" onclick="changefamily(id)">
+ <input type="button" value="Times" id="Times" onclick="changefamily(id)">
+ <input type="button" value="Arial" id="Arial" onclick="changefamily(id)"> 
+ </div>
+ </div>
+ </form>
+</body>
+</html>
