@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Practical 7</title>
+    <style type="text/css">
+      #btn-fetch {
+        margin-top: 20px;
+        margin-left: 50%;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: rgb(85, 39, 88);
+        color: white;
+        border-radius: 8px;
+        border : 2px solid black;
+      }
+      p{
+        text-align: center;
+        font-size: large;
+        color: rgb(158, 64, 245);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn-fetch">PET INFO</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      var btnFetch = document.getElementById("btn-fetch");
+
+      btnFetch.addEventListener("click", () => {
+        const xhr = new XMLHttpRequest();
+
+        xhr.open("GET", "pet.json", true);
+
+        xhr.onload = () => {
+          console.log(xhr.responseText);
+         var obj=JSON.parse(xhr.responseText)
+        for(var [key,value] of Object.entries(obj))
+        {
+          
+       
+          let p = document.createElement("p");
+          let htmlpart = "";
+          htmlpart +=
+            value.name +
+            " is a " +
+            value.type +
+            " with age " +
+            value.age +
+            " years and weight " +
+            value.weight +
+            "kg and likes " +
+            value.what;
+          p.innerHTML = htmlpart;
+          document.body.appendChild(p);
+          
+          htmlpart = "";
+          
+        }
+        };
+
+        xhr.send();
+      });
+
+    </script>
+  </body>
+</html>
