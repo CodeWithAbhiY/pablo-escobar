@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+            .para {
+                background-color: aqua;
+                font-size: larger;
+            }
+
+            .bg {
+                background-color: blue;
+                text-align: center;
+            }
+
+            .azx {
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="abc">
+            <h1><em>Bsc. Hons Computer Science Course</em></h1>
+
+            <div class="para2">
+                <h1>fee</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem ad, hic voluptates enim at
+                    inventore illum nemo aliquid veritatis consectetur ex omnis cum provident. Aperiam molestias at quaerat
+                    assumenda animi vel.</p>
+
+            </div>
+            <div class="para3">
+                <h1>eligibity criteria</h1>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.
+                    </li>
+
+                    <li>Lorem ipsum dolor sit amet.
+                    </li>
+                    <li>Lorem ipsum dolor sit amet.
+                    </li>
+
+                </ul>
+            </div>
+            <div class="para4">
+                <h1>Paper with name and credits</h1>
+                <ul>
+                    <li>Maths
+                    </li>
+
+                    <li>english</li>
+                    <li>hindi</li>
+
+                </ul>
+            </div>
+            <div class="para5">
+                <h1>
+                    future possibility
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reprehenderit minima iure odit nobis?
+                    Quod
+                    minima, ipsam est laborum aliquam sunt dolorum esse repudiandae veritatis amet nesciunt quasi, suscipit
+                    eligendi dolorem facilis reprehenderit officiis, officia fuga!</p>
+            </div>
+        </div>
+        <button id=1>click </button>
+
+        <script>
+            $("#1").on("click", function () {
+                $("p").addClass("para")
+                $("#abc").addClass("bg")
+                $("ul").addClass("para")
+                $("h1").addClass("azx")
+
+            })
+        </script>
+    </body>
+
+</html>
